@@ -6,7 +6,7 @@ const DATA = {
     nGender: 2139, nProf: 2093, nAge: 2136, nSeg: 3161, nParty: 2138, nResearch: 2192, nCommon: 2134,
     gender: { Male: 68.5, Female: 26.7, Undetermined: 2.5 },
     profession: { "Business Professional": 31.2, "Blue Collar Worker": 25.0, Student: 14.3, Retail: 10.6, Retired: 5.9, Educator: 5.3, "Home Care": 3.4 },
-    age: { "Millennials (25–40)": 53.0, "Gen X (41–56)": 22.5, "Gen Z (13–24)": 14.9, "Baby Boomers (57–75)": 5.5, "Gen Alpha (<12)": 1.4, "Silent Gen (76+)": 0.3 },
+    age: { "25–40": 53.0, "41–56": 22.5, "13–24": 14.9, "57–75": 5.5, "<12": 1.4, "76+": 0.3 },
     segmentInterest: { Wearables: 73, Metaverse: 21, "Competitor's Product": 1 },
     shoppingParty: { Alone: 41.6, "With Family": 23.5, "With Friends": 17.7, "With Significant Other": 14.9 },
     research: { "In-Store Demo": 30.3, "Online / Google": 23.4, "Word of Mouth": 20.6, Unsure: 10.1, "Returning Customer": 5.3, Other: 5.9, "AI Chat": 3.7, "Demo at Other Retailer": 0.7 },
@@ -26,15 +26,15 @@ const DATA = {
       Undetermined: { "In-Store Demo": 31.6, "Online / Google": 16.5, "Word of Mouth": 20.3, Unsure: 17.7, "Returning Customer": 3.8, Other: 6.3, "AI Chat": 1.3, "Demo at Other Retailer": 2.5 },
     },
     common: {
-      Male: { Millennials: 36.8, "Gen X": 15.4, "Gen Z": 11.3, Boomers: 3.4, "Gen Alpha": 1.2 },
-      Female: { Millennials: 14.7, "Gen X": 6.2, "Gen Z": 3.4, Boomers: 2.1, "Gen Alpha": 0.1 },
+      Male: { "25–40": 36.8, "41–56": 15.4, "13–24": 11.3, "57–75": 3.4, "<12": 1.2 },
+      Female: { "25–40": 14.7, "41–56": 6.2, "13–24": 3.4, "57–75": 2.1, "<12": 0.1 },
     }
   },
   "Best Buy US": {
-    nGender: 1201, nProf: 1167, nAge: 1200, nSeg: 1914, nParty: 1201, nResearch: 1676, nCommon: 1200,
+    nGender: 1201, nProf: 1167, nAge: 1200, nSeg: 1916, nParty: 1201, nResearch: 1677, nCommon: 1199,
     gender: { Male: 69.2, Female: 26.6, Undetermined: 1.8 },
     profession: { "Business Professional": 29.0, "Blue Collar Worker": 30.5, Student: 14.5, Retail: 7.6, Retired: 4.5, Educator: 5.8, "Home Care": 2.8 },
-    age: { "Millennials (25–40)": 53.3, "Gen X (41–56)": 21.7, "Gen Z (13–24)": 16.3, "Baby Boomers (57–75)": 5.1, "Gen Alpha (<12)": 0.9, "Silent Gen (76+)": 0.2 },
+    age: { "25–40": 53.3, "41–56": 21.7, "13–24": 16.3, "57–75": 5.1, "<12": 0.9, "76+": 0.2 },
     segmentInterest: { Wearables: 79, Metaverse: 20, "Competitor's Product": 1 },
     shoppingParty: { Alone: 37.2, "With Family": 27.3, "With Friends": 16.7, "With Significant Other": 19.3 },
     research: { "In-Store Demo": 34.3, "Online / Google": 26.5, "Word of Mouth": 21.1, Unsure: 10.0, "Returning Customer": 5.6, Other: 0, "AI Chat": 2.1, "Demo at Other Retailer": 0.5 },
@@ -54,15 +54,15 @@ const DATA = {
       Undetermined: { "In-Store Demo": 33.3, "Online / Google": 20.5, "Word of Mouth": 30.8, Unsure: 10.3, "Returning Customer": 2.6, Other: 0, "AI Chat": 2.6, "Demo at Other Retailer": 0 },
     },
     common: {
-      Male: { Millennials: 37.0, "Gen X": 15.0, "Gen Z": 11.3, Boomers: 3.5, "Gen Alpha": 0.6 },
-      Female: { Millennials: 14.1, "Gen X": 5.8, "Gen Z": 4.3, Boomers: 1.4, "Gen Alpha": 0.2 },
+      Male: { "25–40": 37.0, "41–56": 15.0, "13–24": 11.3, "57–75": 3.5, "<12": 0.6 },
+      Female: { "25–40": 14.1, "41–56": 5.8, "13–24": 4.3, "57–75": 1.4, "<12": 0.2 },
     }
   },
   "Best Buy Canada": {
-    nGender: 538, nProf: 529, nAge: 538, nSeg: 947, nParty: 538, nResearch: 797, nCommon: 538,
+    nGender: 538, nProf: 529, nAge: 538, nSeg: 954, nParty: 538, nResearch: 797, nCommon: 538,
     gender: { Male: 72.0, Female: 22.9, Undetermined: 2.2 },
     profession: { "Business Professional": 30.9, "Blue Collar Worker": 17.0, Student: 15.2, Retail: 17.1, Retired: 7.2, Educator: 3.4, "Home Care": 4.7 },
-    age: { "Millennials (25–40)": 58.5, "Gen X (41–56)": 16.4, "Gen Z (13–24)": 15.9, "Baby Boomers (57–75)": 5.1, "Gen Alpha (<12)": 1.1, "Silent Gen (76+)": 0.2 },
+    age: { "25–40": 58.5, "41–56": 16.4, "13–24": 15.9, "57–75": 5.1, "<12": 1.1, "76+": 0.2 },
     segmentInterest: { Wearables: 75, Metaverse: 24, "Competitor's Product": 1 },
     shoppingParty: { Alone: 50.6, "With Family": 12.5, "With Friends": 27.2, "With Significant Other": 8.7 },
     research: { "In-Store Demo": 32.5, "Online / Google": 23.7, "Word of Mouth": 22.7, Unsure: 7.9, "Returning Customer": 5.1, Other: 0, "AI Chat": 7.3, "Demo at Other Retailer": 0.6 },
@@ -82,15 +82,15 @@ const DATA = {
       Undetermined: { "In-Store Demo": 21.1, "Online / Google": 21.1, "Word of Mouth": 10.5, Unsure: 31.6, "Returning Customer": 10.5, Other: 0, "AI Chat": 0, "Demo at Other Retailer": 5.3 },
     },
     common: {
-      Male: { Millennials: 42.2, "Gen X": 11.7, "Gen Z": 11.5, Boomers: 3.5, "Gen Alpha": 0.7 },
-      Female: { Millennials: 13.4, "Gen X": 3.7, "Gen Z": 3.5, Boomers: 1.3, "Gen Alpha": 0.2 },
+      Male: { "25–40": 42.2, "41–56": 11.7, "13–24": 11.5, "57–75": 3.5, "<12": 0.7 },
+      Female: { "25–40": 13.4, "41–56": 3.7, "13–24": 3.5, "57–75": 1.3, "<12": 0.2 },
     }
   },
   "AT&T": {
-    nGender: 83, nProf: 83, nAge: 83, nSeg: 86, nParty: 78, nResearch: 99, nCommon: 83,
+    nGender: 83, nProf: 83, nAge: 83, nSeg: 83, nParty: 78, nResearch: 99, nCommon: 83,
     gender: { Male: 42.2, Female: 47.0, Undetermined: 10.8 },
     profession: { "Business Professional": 48.2, "Blue Collar Worker": 15.7, Student: 2.4, Retail: 8.4, Retired: 15.7, Educator: 8.4, "Home Care": 1.2 },
-    age: { "Millennials (25–40)": 53.0, "Gen X (41–56)": 28.9, "Gen Z (13–24)": 6.0, "Baby Boomers (57–75)": 10.8, "Silent Gen (76+)": 1.2 },
+    age: { "25–40": 53.0, "41–56": 28.9, "13–24": 6.0, "57–75": 10.8, "76+": 1.2 },
     segmentInterest: { Wearables: 90, Metaverse: 5, "Competitor's Product": 3 },
     shoppingParty: { Alone: 55.1, "With Family": 15.4, "With Friends": 17.9, "With Significant Other": 9.0 },
     research: { "In-Store Demo": 20.2, "Online / Google": 18.2, "Word of Mouth": 25.3, Unsure: 24.2, "Returning Customer": 2.0, Other: 0, "AI Chat": 5.1, "Demo at Other Retailer": 3.0 },
@@ -110,15 +110,15 @@ const DATA = {
       Undetermined: { "In-Store Demo": 44.4, "Online / Google": 11.1, "Word of Mouth": 22.2, Unsure: 22.2, "Returning Customer": 0, Other: 0, "AI Chat": 0, "Demo at Other Retailer": 0 },
     },
     common: {
-      Male: { Millennials: 22.9, "Gen X": 10.8, "Gen Z": 3.6, Boomers: 4.8, "Gen Alpha": 0 },
-      Female: { Millennials: 24.1, "Gen X": 14.5, "Gen Z": 2.4, Boomers: 4.8, "Gen Alpha": 0 },
+      Male: { "25–40": 22.9, "41–56": 10.8, "13–24": 3.6, "57–75": 4.8, "<12": 0 },
+      Female: { "25–40": 24.1, "41–56": 14.5, "13–24": 2.4, "57–75": 4.8, "<12": 0 },
     }
   },
   "T-Mobile": {
     nGender: 44, nProf: 44, nAge: 44, nSeg: 61, nParty: 44, nResearch: 59, nCommon: 44,
     gender: { Male: 48.9, Female: 40.0, Undetermined: 8.9 },
     profession: { "Business Professional": 35.6, "Blue Collar Worker": 11.1, Student: 6.7, Retail: 15.6, Retired: 8.9, Educator: 4.4, "Home Care": 15.6 },
-    age: { "Millennials (25–40)": 55.6, "Gen X (41–56)": 26.7, "Gen Z (13–24)": 4.4, "Baby Boomers (57–75)": 8.9, "Gen Alpha (<12)": 2.2 },
+    age: { "25–40": 55.6, "41–56": 26.7, "13–24": 4.4, "57–75": 8.9, "<12": 2.2 },
     segmentInterest: { Wearables: 95, Metaverse: 3, "Competitor's Product": 2 },
     shoppingParty: { Alone: 40.9, "With Family": 36.4, "With Friends": 9.1, "With Significant Other": 9.1 },
     research: { "In-Store Demo": 25.4, "Online / Google": 22.0, "Word of Mouth": 27.1, Unsure: 22.0, "Returning Customer": 1.7, Other: 0, "AI Chat": 0, "Demo at Other Retailer": 0 },
@@ -138,15 +138,15 @@ const DATA = {
       Undetermined: { "In-Store Demo": 0, "Online / Google": 0, "Word of Mouth": 0, Unsure: 25.0, "Returning Customer": 0, Other: 75.0, "AI Chat": 0, "Demo at Other Retailer": 0 },
     },
     common: {
-      Male: { Millennials: 26.7, "Gen X": 13.3, "Gen Z": 2.2, Boomers: 4.4, "Gen Alpha": 0 },
-      Female: { Millennials: 22.2, "Gen X": 11.1, "Gen Z": 2.2, Boomers: 4.4, "Gen Alpha": 0 },
+      Male: { "25–40": 26.7, "41–56": 13.3, "13–24": 2.2, "57–75": 4.4, "<12": 0 },
+      Female: { "25–40": 22.2, "41–56": 11.1, "13–24": 2.2, "57–75": 4.4, "<12": 0 },
     }
   },
   "Verizon": {
-    nGender: 209, nProf: 208, nAge: 209, nSeg: 418, nParty: 209, nResearch: 418, nCommon: 209,
+    nGender: 209, nProf: 208, nAge: 209, nSeg: 418, nParty: 209, nResearch: 418, nCommon: 208,
     gender: { Male: 64.9, Female: 30.3, Undetermined: 3.8 },
     profession: { "Business Professional": 37.0, "Blue Collar Worker": 23.7, Student: 10.4, Retail: 11.4, Retired: 7.1, Educator: 6.6, "Home Care": 2.4 },
-    age: { "Millennials (25–40)": 40.8, "Gen X (41–56)": 37.4, "Gen Z (13–24)": 8.1, "Baby Boomers (57–75)": 8.1, "Gen Alpha (<12)": 3.3, "Silent Gen (76+)": 1.4 },
+    age: { "25–40": 40.8, "41–56": 37.4, "13–24": 8.1, "57–75": 8.1, "<12": 3.3, "76+": 1.4 },
     segmentInterest: { Wearables: 54, Metaverse: 40, "Competitor's Product": 1 },
     shoppingParty: { Alone: 42.6, "With Family": 26.3, "With Friends": 18.2, "With Significant Other": 12.5 },
     research: { "In-Store Demo": 30.3, "Online / Google": 22.8, "Word of Mouth": 20.6, Unsure: 12.2, "Returning Customer": 5.0, Other: 0, "AI Chat": 3.4, "Demo at Other Retailer": 1.4 },
@@ -166,15 +166,15 @@ const DATA = {
       Undetermined: { "In-Store Demo": 31.6, "Online / Google": 16.5, "Word of Mouth": 20.3, Unsure: 17.7, "Returning Customer": 3.8, Other: 6.3, "AI Chat": 1.3, "Demo at Other Retailer": 2.5 },
     },
     common: {
-      Male: { Millennials: 26.3, "Gen X": 24.4, "Gen Z": 5.3, Boomers: 5.7, "Gen Alpha": 2.4 },
-      Female: { Millennials: 12.4, "Gen X": 10.5, "Gen Z": 2.4, Boomers: 1.9, "Gen Alpha": 0.5 },
+      Male: { "25–40": 26.3, "41–56": 24.4, "13–24": 5.3, "57–75": 5.7, "<12": 2.4 },
+      Female: { "25–40": 12.4, "41–56": 10.5, "13–24": 2.4, "57–75": 1.9, "<12": 0.5 },
     }
   },
   "Nebraska Furniture Mart": {
     nGender: 64, nProf: 64, nAge: 62, nSeg: 95, nParty: 64, nResearch: 62, nCommon: 62,
     gender: { Male: 84.4, Female: 15.6 },
     profession: { "Business Professional": 32.8, "Blue Collar Worker": 14.1, Student: 35.9, Retail: 9.4, Retired: 1.6, Educator: 3.1 },
-    age: { "Millennials (25–40)": 39.1, "Gen X (41–56)": 29.7, "Gen Z (13–24)": 20.3, "Gen Alpha (<12)": 7.8 },
+    age: { "25–40": 39.1, "41–56": 29.7, "13–24": 20.3, "<12": 7.8 },
     segmentInterest: { Wearables: 10, Metaverse: 90, "Competitor's Product": 0 },
     shoppingParty: { Alone: 32.8, "With Family": 53.1, "With Friends": 6.6, "With Significant Other": 4.7 },
     research: { "In-Store Demo": 0, "Online / Google": 17.7, "Word of Mouth": 32.3, Unsure: 16.1, "Returning Customer": 17.7, Other: 0, "AI Chat": 12.9, "Demo at Other Retailer": 0 },
@@ -191,8 +191,8 @@ const DATA = {
       Male: { "In-Store Demo": 0, "Online / Google": 19.2, "Word of Mouth": 34.6, Unsure: 15.4, "Returning Customer": 23.1, Other: 0, "AI Chat": 7.7, "Demo at Other Retailer": 0 },
     },
     common: {
-      Male: { Millennials: 33.9, "Gen X": 24.2, "Gen Z": 17.7, Boomers: 0, "Gen Alpha": 6.5 },
-      Female: { Millennials: 4.8, "Gen X": 4.8, "Gen Z": 1.6, Boomers: 0, "Gen Alpha": 1.6 },
+      Male: { "25–40": 33.9, "41–56": 24.2, "13–24": 17.7, "57–75": 0, "<12": 6.5 },
+      Female: { "25–40": 4.8, "41–56": 4.8, "13–24": 1.6, "57–75": 0, "<12": 1.6 },
     }
   },
 };
@@ -303,7 +303,7 @@ function ProfGrid({ data }) {
 }
 
 function CommonGrid({ data }) {
-  const gens = ["Millennials", "Gen X", "Gen Z", "Boomers", "Gen Alpha"];
+  const gens = ["25–40", "41–56", "13–24", "57–75", "<12"];
   const allVals = Object.values(data).flatMap(g => Object.values(g));
   const maxV = Math.max(...allVals);
   return (
@@ -395,7 +395,7 @@ function Takeaway({ d }) {
       <div>
         <div style={{ fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 5 }}>Key Takeaway</div>
         <div style={{ fontSize: 12, color: C.sub, lineHeight: 1.75 }}>
-          The dominant customer profile is a <b style={{ color: C.text }}>{topG[0]} {topA[0].split(" (")[0]} ({topG[1].toFixed(1)}%)</b> who visits the store <b style={{ color: C.text }}>{topP[0].toLowerCase()}</b>, is primarily interested in <b style={{ color: C.text }}>{topS[0]} ({topS[1]}%)</b>, and discovers the product through <b style={{ color: C.text }}>{res[0][0].toLowerCase()} ({res[0][1].toFixed(1)}%)</b> or <b style={{ color: C.text }}>{res[1][0].toLowerCase()} ({res[1][1].toFixed(1)}%)</b>.
+          The dominant customer profile is a <b style={{ color: C.text }}>{topG[0]} aged {topA[0]} ({topG[1].toFixed(1)}%)</b> who visits the store <b style={{ color: C.text }}>{topP[0].toLowerCase()}</b>, is primarily interested in <b style={{ color: C.text }}>{topS[0]} ({topS[1]}%)</b>, and discovers the product through <b style={{ color: C.text }}>{res[0][0].toLowerCase()} ({res[0][1].toFixed(1)}%)</b> or <b style={{ color: C.text }}>{res[1][0].toLowerCase()} ({res[1][1].toFixed(1)}%)</b>.
           {divergence && <> A notable gender divergence appears in segment interest — female customers skew heavily toward <b style={{ color: C.text }}>{fTop[0]} ({fTop[1]}%)</b> rather than {mTop[0]}.</>}
         </div>
       </div>
@@ -422,8 +422,8 @@ export default function App() {
         <div style={{ display: "flex", gap: 12, marginBottom: 18 }}>
           <div style={{ width: 4, borderRadius: 2, background: C.blue, flexShrink: 0 }} />
           <div>
-            <h1 style={{ fontSize: 21, fontWeight: 800, margin: 0, letterSpacing: "-0.02em" }}>Customer Profile Case Study</h1>
-            <p style={{ fontSize: 11, color: C.dim, margin: "3px 0 0" }}>n = {d.nGender.toLocaleString()}–{d.nSeg.toLocaleString()} respondents · Demographic and behavioral segmentation analysis</p>
+            <h1 style={{ fontSize: 21, fontWeight: 800, margin: 0, letterSpacing: "-0.02em" }}>Meta Customer Profiles - Q1 '26</h1>
+            <p style={{ fontSize: 11, color: C.dim, margin: "3px 0 0" }}>Demographic and behavioral segmentation analysis</p>
           </div>
         </div>
 
@@ -441,13 +441,13 @@ export default function App() {
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 10 }}>
           <Card><Head sub={`n = ${d.nGender.toLocaleString()}`}>Gender Distribution</Head><GenderDonut data={d.gender} /></Card>
           <Card>
-            <Head sub={`n = ${d.nAge.toLocaleString()}`}>Observed Age / Generation</Head>
+            <Head sub={`n = ${d.nAge.toLocaleString()}`}>Observed Age Distribution</Head>
             <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
               {Object.entries(d.age).map(([name, val]) => {
                 const max = Math.max(...Object.values(d.age));
                 return (
-                  <div key={name} style={{ display: "grid", gridTemplateColumns: "108px 1fr 40px", alignItems: "center", gap: 6 }}>
-                    <span style={{ fontSize: 10.5, color: C.sub, textAlign: "right" }}>{name}</span>
+                  <div key={name} style={{ display: "grid", gridTemplateColumns: "60px 1fr 40px", alignItems: "center", gap: 6 }}>
+                    <span style={{ fontSize: 11, color: C.sub, textAlign: "right" }}>{name}</span>
                     <HBar value={val} max={max} color={C.blue} h={14} />
                     <span style={{ fontSize: 11, fontWeight: 700, color: C.text }}>{val.toFixed(1)}%</span>
                   </div>
@@ -465,7 +465,7 @@ export default function App() {
 
         {/* Common Profiles */}
         <Card style={{ marginBottom: 10 }}>
-          <Head sub={`n = ${d.nCommon.toLocaleString()} · Gender × Generation cross-tab`}>Most Common Customer Profiles</Head>
+          <Head sub={`n = ${d.nCommon.toLocaleString()} · Gender × Age cross-tab`}>Most Common Customer Profiles</Head>
           <CommonGrid data={d.common} />
         </Card>
 
@@ -507,7 +507,7 @@ export default function App() {
         <Takeaway d={d} />
 
         <div style={{ marginTop: 20, textAlign: "center", fontSize: 10, color: C.dim }}>
-          Customer Profile Data · {CHANNELS.length} retail channels · {Object.values(DATA).reduce((a, c) => a + c.nSeg, 0).toLocaleString()} total data points
+          Field Data Collected 2/1/26 - 3/7/26 | 2,188 Total MSS Submissions
         </div>
       </div>
     </div>
