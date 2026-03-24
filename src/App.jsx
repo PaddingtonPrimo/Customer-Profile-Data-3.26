@@ -36,8 +36,8 @@ const DATA = {
     profession: { "Business Professional": 29.0, "Blue Collar Worker": 30.5, Student: 14.5, Retail: 7.6, Retired: 4.5, Educator: 5.8, "Home Care": 2.8 },
     age: { "25–40": 53.3, "41–56": 21.7, "13–24": 16.3, "57–75": 5.1, "<12": 0.9, "76+": 0.2 },
     segmentInterest: { Wearables: 79, Metaverse: 20, "Competitor's Product": 1 },
-    shoppingParty: { Alone: 37.2, "With Family": 27.3, "With Friends": 16.7, "With Significant Other": 19.3 },
-    research: { "In-Store Demo": 34.3, "Online / Google": 26.5, "Word of Mouth": 21.1, Unsure: 10.0, "Returning Customer": 5.6, Other: 0, "AI Chat": 2.1, "Demo at Other Retailer": 0.5 },
+    shoppingParty: { Alone: 35.7, "With Family": 26.6, "With Friends": 16.2, "With Significant Other": 20.1 },
+    research: { "In-Store Demo": 34.2, "Online / Google": 26.4, "Word of Mouth": 21.0, Unsure: 10.0, "Returning Customer": 5.7, Other: 0, "AI Chat": 2.1, "Demo at Other Retailer": 0.7 },
     genderSeg: {
       Female: { Wearables: 81, Metaverse: 19, "Competitor's Product": 0 },
       Male: { Wearables: 79, Metaverse: 20, "Competitor's Product": 1 },
@@ -50,12 +50,12 @@ const DATA = {
     },
     genderResearch: {
       Female: { "In-Store Demo": 36.2, "Online / Google": 26.4, "Word of Mouth": 21.1, Unsure: 10.4, "Returning Customer": 4.7, Other: 0, "AI Chat": 0.9, "Demo at Other Retailer": 0.2 },
-      Male: { "In-Store Demo": 33.4, "Online / Google": 26.5, "Word of Mouth": 20.6, Unsure: 9.9, "Returning Customer": 6.2, Other: 0, "AI Chat": 2.5, "Demo at Other Retailer": 0.9 },
+      Male: { "In-Store Demo": 33.4, "Online / Google": 26.5, "Word of Mouth": 20.6, Unsure: 9.9, "Returning Customer": 6.1, Other: 0, "AI Chat": 2.5, "Demo at Other Retailer": 0.9 },
       Undetermined: { "In-Store Demo": 33.3, "Online / Google": 20.5, "Word of Mouth": 30.8, Unsure: 10.3, "Returning Customer": 2.6, Other: 0, "AI Chat": 2.6, "Demo at Other Retailer": 0 },
     },
     common: {
-      Male: { "25–40": 37.0, "41–56": 15.0, "13–24": 11.3, "57–75": 3.5, "<12": 0.6 },
-      Female: { "25–40": 14.1, "41–56": 5.8, "13–24": 4.3, "57–75": 1.4, "<12": 0.2 },
+      Male: { "25–40": 38.7, "41–56": 14.5, "13–24": 12.3, "57–75": 3.0, "<12": 0.7 },
+      Female: { "25–40": 13.9, "41–56": 6.4, "13–24": 3.8, "57–75": 2.1, "<12": 0.1 },
     }
   },
   "Best Buy Canada": {
@@ -63,9 +63,9 @@ const DATA = {
     gender: { Male: 72.0, Female: 22.9, Undetermined: 2.2 },
     profession: { "Business Professional": 30.9, "Blue Collar Worker": 17.0, Student: 15.2, Retail: 17.1, Retired: 7.2, Educator: 3.4, "Home Care": 4.7 },
     age: { "25–40": 58.5, "41–56": 16.4, "13–24": 15.9, "57–75": 5.1, "<12": 1.1, "76+": 0.2 },
-    segmentInterest: { Wearables: 75, Metaverse: 24, "Competitor's Product": 1 },
-    shoppingParty: { Alone: 50.6, "With Family": 12.5, "With Friends": 27.2, "With Significant Other": 8.7 },
-    research: { "In-Store Demo": 32.5, "Online / Google": 23.7, "Word of Mouth": 22.7, Unsure: 7.9, "Returning Customer": 5.1, Other: 0, "AI Chat": 7.3, "Demo at Other Retailer": 0.6 },
+    segmentInterest: { Wearables: 76, Metaverse: 23, "Competitor's Product": 1 },
+    shoppingParty: { Alone: 50.5, "With Family": 11.6, "With Friends": 26.2, "With Significant Other": 8.8 },
+    research: { "In-Store Demo": 32.4, "Online / Google": 23.7, "Word of Mouth": 22.5, Unsure: 8.3, "Returning Customer": 5.4, Other: 0, "AI Chat": 7.2, "Demo at Other Retailer": 0.6 },
     genderSeg: {
       Female: { Wearables: 67, Metaverse: 32, "Competitor's Product": 1 },
       Male: { Wearables: 79, Metaverse: 20, "Competitor's Product": 1 },
@@ -82,8 +82,8 @@ const DATA = {
       Undetermined: { "In-Store Demo": 21.1, "Online / Google": 21.1, "Word of Mouth": 10.5, Unsure: 31.6, "Returning Customer": 10.5, Other: 0, "AI Chat": 0, "Demo at Other Retailer": 5.3 },
     },
     common: {
-      Male: { "25–40": 42.2, "41–56": 11.7, "13–24": 11.5, "57–75": 3.5, "<12": 0.7 },
-      Female: { "25–40": 13.4, "41–56": 3.7, "13–24": 3.5, "57–75": 1.3, "<12": 0.2 },
+      Male: { "25–40": 43.5, "41–56": 11.2, "13–24": 12.3, "57–75": 3.8, "<12": 1.1 },
+      Female: { "25–40": 13.9, "41–56": 4.7, "13–24": 3.1, "57–75": 1.3, "<12": 0 },
     }
   },
   "AT&T": {
@@ -91,9 +91,9 @@ const DATA = {
     gender: { Male: 42.2, Female: 47.0, Undetermined: 10.8 },
     profession: { "Business Professional": 48.2, "Blue Collar Worker": 15.7, Student: 2.4, Retail: 8.4, Retired: 15.7, Educator: 8.4, "Home Care": 1.2 },
     age: { "25–40": 53.0, "41–56": 28.9, "13–24": 6.0, "57–75": 10.8, "76+": 1.2 },
-    segmentInterest: { Wearables: 90, Metaverse: 5, "Competitor's Product": 3 },
-    shoppingParty: { Alone: 55.1, "With Family": 15.4, "With Friends": 17.9, "With Significant Other": 9.0 },
-    research: { "In-Store Demo": 20.2, "Online / Google": 18.2, "Word of Mouth": 25.3, Unsure: 24.2, "Returning Customer": 2.0, Other: 0, "AI Chat": 5.1, "Demo at Other Retailer": 3.0 },
+    segmentInterest: { Wearables: 91, Metaverse: 6, "Competitor's Product": 3 },
+    shoppingParty: { Alone: 49.4, "With Family": 22.9, "With Friends": 18.1, "With Significant Other": 8.4 },
+    research: { "In-Store Demo": 22.2, "Online / Google": 18.2, "Word of Mouth": 25.3, Unsure: 24.2, "Returning Customer": 2.0, Other: 0, "AI Chat": 5.1, "Demo at Other Retailer": 3.0 },
     genderSeg: {
       Female: { Wearables: 87, Metaverse: 9, "Competitor's Product": 4 },
       Male: { Wearables: 97, Metaverse: 0, "Competitor's Product": 3 },
@@ -110,8 +110,8 @@ const DATA = {
       Undetermined: { "In-Store Demo": 44.4, "Online / Google": 11.1, "Word of Mouth": 22.2, Unsure: 22.2, "Returning Customer": 0, Other: 0, "AI Chat": 0, "Demo at Other Retailer": 0 },
     },
     common: {
-      Male: { "25–40": 22.9, "41–56": 10.8, "13–24": 3.6, "57–75": 4.8, "<12": 0 },
-      Female: { "25–40": 24.1, "41–56": 14.5, "13–24": 2.4, "57–75": 4.8, "<12": 0 },
+      Male: { "25–40": 18.1, "41–56": 14.5, "13–24": 2.4, "57–75": 6.0, "<12": 0 },
+      Female: { "25–40": 25.3, "41–56": 13.3, "13–24": 3.6, "57–75": 4.8, "<12": 0 },
     }
   },
   "T-Mobile": {
@@ -120,8 +120,8 @@ const DATA = {
     profession: { "Business Professional": 35.6, "Blue Collar Worker": 11.1, Student: 6.7, Retail: 15.6, Retired: 8.9, Educator: 4.4, "Home Care": 15.6 },
     age: { "25–40": 55.6, "41–56": 26.7, "13–24": 4.4, "57–75": 8.9, "<12": 2.2 },
     segmentInterest: { Wearables: 95, Metaverse: 3, "Competitor's Product": 2 },
-    shoppingParty: { Alone: 40.9, "With Family": 36.4, "With Friends": 9.1, "With Significant Other": 9.1 },
-    research: { "In-Store Demo": 25.4, "Online / Google": 22.0, "Word of Mouth": 27.1, Unsure: 22.0, "Returning Customer": 1.7, Other: 0, "AI Chat": 0, "Demo at Other Retailer": 0 },
+    shoppingParty: { Alone: 46.7, "With Family": 33.3, "With Friends": 8.9, "With Significant Other": 8.9 },
+    research: { "In-Store Demo": 28.8, "Online / Google": 20.3, "Word of Mouth": 25.4, Unsure: 23.7, "Returning Customer": 1.7, Other: 0, "AI Chat": 0, "Demo at Other Retailer": 0 },
     genderSeg: {
       Female: { Wearables: 100, Metaverse: 0, "Competitor's Product": 0 },
       Male: { Wearables: 91, Metaverse: 6, "Competitor's Product": 3 },
@@ -135,39 +135,11 @@ const DATA = {
     genderResearch: {
       Female: { "In-Store Demo": 18.2, "Online / Google": 13.6, "Word of Mouth": 31.8, Unsure: 36.4, "Returning Customer": 0, Other: 0, "AI Chat": 0, "Demo at Other Retailer": 0 },
       Male: { "In-Store Demo": 30.3, "Online / Google": 27.3, "Word of Mouth": 24.2, Unsure: 15.2, "Returning Customer": 3.0, Other: 0, "AI Chat": 0, "Demo at Other Retailer": 0 },
-      Undetermined: { "In-Store Demo": 0, "Online / Google": 0, "Word of Mouth": 0, Unsure: 25.0, "Returning Customer": 0, Other: 75.0, "AI Chat": 0, "Demo at Other Retailer": 0 },
+      Undetermined: { "In-Store Demo": 75.0, "Online / Google": 0, "Word of Mouth": 0, Unsure: 25.0, "Returning Customer": 0, Other: 0, "AI Chat": 0, "Demo at Other Retailer": 0 },
     },
     common: {
-      Male: { "25–40": 26.7, "41–56": 13.3, "13–24": 2.2, "57–75": 4.4, "<12": 0 },
-      Female: { "25–40": 22.2, "41–56": 11.1, "13–24": 2.2, "57–75": 4.4, "<12": 0 },
-    }
-  },
-  "Verizon": {
-    nGender: 209, nProf: 208, nAge: 209, nSeg: 418, nParty: 209, nResearch: 418, nCommon: 208,
-    gender: { Male: 64.9, Female: 30.3, Undetermined: 3.8 },
-    profession: { "Business Professional": 37.0, "Blue Collar Worker": 23.7, Student: 10.4, Retail: 11.4, Retired: 7.1, Educator: 6.6, "Home Care": 2.4 },
-    age: { "25–40": 40.8, "41–56": 37.4, "13–24": 8.1, "57–75": 8.1, "<12": 3.3, "76+": 1.4 },
-    segmentInterest: { Wearables: 54, Metaverse: 40, "Competitor's Product": 1 },
-    shoppingParty: { Alone: 42.6, "With Family": 26.3, "With Friends": 18.2, "With Significant Other": 12.5 },
-    research: { "In-Store Demo": 30.3, "Online / Google": 22.8, "Word of Mouth": 20.6, Unsure: 12.2, "Returning Customer": 5.0, Other: 0, "AI Chat": 3.4, "Demo at Other Retailer": 1.4 },
-    genderSeg: {
-      Female: { Wearables: 20, Metaverse: 74, "Competitor's Product": 1 },
-      Male: { Wearables: 73, Metaverse: 21, "Competitor's Product": 1 },
-      Undetermined: { Wearables: 69, Metaverse: 25, "Competitor's Product": 0 },
-    },
-    genderParty: {
-      Female: { Alone: 36.9, "With Family": 27.2, "With Friends": 19.8, "With Significant Other": 16.1 },
-      Male: { Alone: 45.3, "With Family": 22.0, "With Friends": 17.4, "With Significant Other": 15.2 },
-      Undetermined: { Alone: 27.3, "With Family": 45.5, "With Friends": 20.0, "With Significant Other": 7.3 },
-    },
-    genderResearch: {
-      Female: { "In-Store Demo": 30.3, "Online / Google": 23.1, "Word of Mouth": 20.6, Unsure: 11.6, "Returning Customer": 3.5, Other: 6.2, "AI Chat": 4.0, "Demo at Other Retailer": 0.6 },
-      Male: { "In-Store Demo": 30.2, "Online / Google": 23.8, "Word of Mouth": 20.6, Unsure: 9.2, "Returning Customer": 6.1, Other: 5.7, "AI Chat": 3.7, "Demo at Other Retailer": 0.7 },
-      Undetermined: { "In-Store Demo": 31.6, "Online / Google": 16.5, "Word of Mouth": 20.3, Unsure: 17.7, "Returning Customer": 3.8, Other: 6.3, "AI Chat": 1.3, "Demo at Other Retailer": 2.5 },
-    },
-    common: {
-      Male: { "25–40": 26.3, "41–56": 24.4, "13–24": 5.3, "57–75": 5.7, "<12": 2.4 },
-      Female: { "25–40": 12.4, "41–56": 10.5, "13–24": 2.4, "57–75": 1.9, "<12": 0.5 },
+      Male: { "25–40": 22.2, "41–56": 22.2, "13–24": 4.4, "57–75": 0, "<12": 0 },
+      Female: { "25–40": 24.4, "41–56": 4.4, "13–24": 0, "57–75": 8.9, "<12": 2.2 },
     }
   },
   "Nebraska Furniture Mart": {
@@ -175,9 +147,9 @@ const DATA = {
     gender: { Male: 84.4, Female: 15.6 },
     profession: { "Business Professional": 32.8, "Blue Collar Worker": 14.1, Student: 35.9, Retail: 9.4, Retired: 1.6, Educator: 3.1 },
     age: { "25–40": 39.1, "41–56": 29.7, "13–24": 20.3, "<12": 7.8 },
-    segmentInterest: { Wearables: 10, Metaverse: 90, "Competitor's Product": 0 },
-    shoppingParty: { Alone: 32.8, "With Family": 53.1, "With Friends": 6.6, "With Significant Other": 4.7 },
-    research: { "In-Store Demo": 0, "Online / Google": 17.7, "Word of Mouth": 32.3, Unsure: 16.1, "Returning Customer": 17.7, Other: 0, "AI Chat": 12.9, "Demo at Other Retailer": 0 },
+    segmentInterest: { Wearables: 11, Metaverse: 89, "Competitor's Product": 0 },
+    shoppingParty: { Alone: 35.9, "With Family": 53.1, "With Friends": 7.8, "With Significant Other": 3.1 },
+    research: { "In-Store Demo": 0, "Online / Google": 17.7, "Word of Mouth": 32.3, Unsure: 17.7, "Returning Customer": 19.4, Other: 0, "AI Chat": 12.9, "Demo at Other Retailer": 0 },
     genderSeg: {
       Female: { Wearables: 11, Metaverse: 89, "Competitor's Product": 0 },
       Male: { Wearables: 10, Metaverse: 90, "Competitor's Product": 0 },
@@ -191,8 +163,8 @@ const DATA = {
       Male: { "In-Store Demo": 0, "Online / Google": 19.2, "Word of Mouth": 34.6, Unsure: 15.4, "Returning Customer": 23.1, Other: 0, "AI Chat": 7.7, "Demo at Other Retailer": 0 },
     },
     common: {
-      Male: { "25–40": 33.9, "41–56": 24.2, "13–24": 17.7, "57–75": 0, "<12": 6.5 },
-      Female: { "25–40": 4.8, "41–56": 4.8, "13–24": 1.6, "57–75": 0, "<12": 1.6 },
+      Male: { "25–40": 28.1, "41–56": 29.7, "13–24": 15.6, "57–75": 0, "<12": 7.8 },
+      Female: { "25–40": 10.9, "41–56": 0, "13–24": 4.7, "57–75": 0, "<12": 0 },
     }
   },
 };
