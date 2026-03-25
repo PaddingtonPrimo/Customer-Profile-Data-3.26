@@ -351,8 +351,13 @@ function ResearchGrid({ data }) {
 }
 
 function Takeaway({ d }) {
-  const topG = Object.entries(d.gender).sort((a, b) => b[1] - a[1])[0];
-  const topA = Object.entries(d.age).sort((a, b) => b[1] - a[1])[0];
+  // Find highest value in gender × age cross-tab
+  let topGender = "", topAge = "", topVal = 0;
+  for (const [gender, ages] of Object.entries(d.common)) {
+    for (const [age, val] of Object.entries(ages)) {
+      if (val > topVal) { topVal = val; topGender = gender; topAge = age; }
+    }
+  }
   const topS = Object.entries(d.segmentInterest).sort((a, b) => b[1] - a[1])[0];
   const topP = Object.entries(d.shoppingParty).sort((a, b) => b[1] - a[1])[0];
   const res = Object.entries(d.research).sort((a, b) => b[1] - a[1]);
@@ -367,7 +372,7 @@ function Takeaway({ d }) {
       <div>
         <div style={{ fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 5 }}>Key Takeaway</div>
         <div style={{ fontSize: 12, color: C.sub, lineHeight: 1.75 }}>
-          The dominant customer profile is a <b style={{ color: C.text }}>{topG[0]} aged {topA[0]} ({topG[1].toFixed(1)}%)</b> who visits the store <b style={{ color: C.text }}>{topP[0].toLowerCase()}</b>, is primarily interested in <b style={{ color: C.text }}>{topS[0]} ({topS[1]}%)</b>, and discovers the product through <b style={{ color: C.text }}>{res[0][0].toLowerCase()} ({res[0][1].toFixed(1)}%)</b> or <b style={{ color: C.text }}>{res[1][0].toLowerCase()} ({res[1][1].toFixed(1)}%)</b>.
+          The dominant customer profile is a <b style={{ color: C.text }}>{topGender} aged {topAge} ({topVal.toFixed(1)}%)</b> who visits the store <b style={{ color: C.text }}>{topP[0].toLowerCase()}</b>, is primarily interested in <b style={{ color: C.text }}>{topS[0]} ({topS[1]}%)</b>, and discovers the product through <b style={{ color: C.text }}>{res[0][0].toLowerCase()} ({res[0][1].toFixed(1)}%)</b> or <b style={{ color: C.text }}>{res[1][0].toLowerCase()} ({res[1][1].toFixed(1)}%)</b>.
           {divergence && <> A notable gender divergence appears in segment interest — female customers skew heavily toward <b style={{ color: C.text }}>{fTop[0]} ({fTop[1]}%)</b> rather than {mTop[0]}.</>}
         </div>
       </div>
